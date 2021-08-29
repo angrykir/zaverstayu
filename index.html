@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css\normalize.css">
+    <link rel="stylesheet" href="css\style.css">
     <title>Botanika — цветы в Петербурге</title>
 </head>
 
@@ -62,33 +63,35 @@
                     </p>
                     <p class="size">30 × 40 см</p>
                     <p class="price">3600 руб.</p>
-                    <a href="#" class="link-button">Заказать</a>
+                    <button class="action-button" type="button">
+                        Заказать
+                    </button>
                 </div>
                 <img src="files\slider__boquet-white-roses.png" width="387" height="438" alt="Букет белых роз">
             </div>
             <div class="control-button">
-                <a href="#" class="link-button__left">
+                <button type="button">
                     <img src="img\arrow-left.svg" width="51" height="15" alt="Влево">
-                </a>
-                <a href="#" class="link-button__right">
+                </button>
+                <button type="button">
                     <img src="img\arrow-right.svg" width="51" height="15" alt="Вправо">
-                </a>
+                </button>
             </div>
         </section>
         <section class="card-group">
             <a class="card__go-to-chapter">
                 <p class="card-title">Свадебные букеты</p>
-                <p>Букеты для невест</p>
+                <p class="card-description">Букеты для невест</p>
                 <img src="files\card__boquet-white-roses.jpg" width="387" height="442" alt="Свадебный букет с розами">
             </a>
             <a class="card__go-to-chapter">
                 <p class="card-title">Букеты с пионами</p>
-                <p>Букеты с сезонными пионами</p>
+                <p class="card-description">Букеты с сезонными пионами</p>
                 <img src="files\card__boquet-peony.jpg" width="388" height="442" alt="Букет с пионами">
             </a>
             <a class="card__go-to-chapter">
                 <p class="card-title">Выбрать букет</p>
-                <p>Букеты в ассортименте</p>
+                <p class="card-description">Букеты в ассортименте</p>
                 <img src="files\card__boquet-white-roses.jpg" width="388" height="442" alt="Букеты в руках">
             </a>
         </section>
@@ -153,13 +156,13 @@
                 <cite>Ольга</cite>
             </blockquote>
         </section>
-        <section class="contact-adress">
+        <section class="contact-address">
             <h2>Мы ждем вас</h2>
             <address>
-                <p>Приходите к нам:<span class="bold">Санкт-Петербург, ул. Большая Конюшенная, 19</span></p>
-                <p>Режим работы:<span class="bold">Пн-Вск, с 9-00 до 20-00</span></p>
-                <p>Позвоните нам:<span class="bold"><a href="tel:+78129834719">+ 7 (812) 983-47-19</a></span></p>
-                <p>Напишите нам:<span class="bold"><a href="mailto:info@botanika.ru">info@botanika.ru</a></span></p>
+                <p>Приходите к нам:<span>Санкт-Петербург, ул. Большая Конюшенная, 19</span></p>
+                <p>Режим работы:<span>Пн-Вск, с 9-00 до 20-00</span></p>
+                <p>Позвоните нам:<span><a href="tel:+78129834719">+ 7 (812) 983-47-19</a></span></p>
+                <p>Напишите нам:<span><a href="mailto:info@botanika.ru">info@botanika.ru</a></span></p>
             </address>
             <img src="files\contact-adress__map.jpg" width="1440" height="644">
         </section>
@@ -168,7 +171,7 @@
         <a href="#" class="page-footer__logo">
             <img src="img\footer-logo.svg" width="100" height="32" alt="На главную">
         </a>
-        <ul>
+        <ul class="navigation"> 
             <li><a href="#">Каталог</a></li>
             <li><a href="#">Доставка и оплата</a></li>
             <li><a href="#">Отзывы</a></li>

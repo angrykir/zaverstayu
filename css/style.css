@@ -1,0 +1,288 @@
+/*Add fonts*/
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: medium;
+    font-weight: 500;
+    src: local('Montserrat'), url('../fonts/Montserrat-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat'), url('../fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    font-style: Bold;
+    font-weight: 700;
+    src: local('Playfair Display'), url('../fonts/PlayfairDisplay-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    font-style: italic;
+    font-weight: 400;
+    src: local('PlayfairDisplay'), url('../fonts/PlayfairDisplay-Italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Playfair Display'), url('../fonts/PlayfairDisplay-Regular.ttf') format('truetype');
+}
+
+/*Global*/
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #AE7C78;
+}
+
+h2 {
+    font-family: Playfair Display, Times New Roman, Times, serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.02em;
+    color: #AE7C78;
+}
+
+h3 {
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #AE7C78;
+}
+
+/*Page header*/
+
+.main-menu li a {
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #AE7C78;
+}
+
+/*Primary*/
+
+.primary h1 {
+    font-family: Playfair Display, Times New Roman, Times, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 44px;
+    line-height: 59px;
+    color: #AE7C78;
+}
+
+.primary h2 {
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    color: #AE7C78;
+}
+
+.primary .link-button {
+    display: block;
+    width: 285px;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 80px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #D89999;
+    border-radius: 40px;
+}
+
+/*Advantages*/
+
+/*Slider*/
+
+.slider h3 {
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #AE7C78;
+}
+
+.slider .description {
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #AE7C78;
+}
+
+.slider .size {
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #AE7C78;
+}
+
+.slider .price {
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #AE7C78;
+}
+
+.slider .action-button {
+    display: block;
+    width: 285px;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 80px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #D89999;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+}
+
+.slider .control-button button {
+    padding: 0;
+    height: 15px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/*Card group*/
+
+.card-group .card__go-to-chapter {
+    display: inline-block;
+    background: rgba(174, 124, 120, 0.6);
+    border-radius: 10px;
+}
+
+.card-group .card-title {
+    font-family: Playfair Display, Times New Roman, Times, serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+.card-group .card-description {
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+/*Discount*/
+
+.discount {
+    display: inline-block;
+    background: #AE7C78;
+}
+
+.discount h2 {
+    font-family: Playfair Display, Times New Roman, Times, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 44px;
+    line-height: 59px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+.discount h3 {
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+}
+
+/*Steps to order*/
+
+/*News*/
+
+/*Reviews*/
+
+.reviews {
+    display: inline-block;
+    border: 1px solid #AE7C78;
+}
+
+.reviews cite {
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #AE7C78;
+}
+
+/*Contact address*/
+
+.contact-address address span {
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    color: #AE7C78;
+}
+
+.contact-address a {
+    color: #AE7C78;
+}
+
+/*Page footer*/
+
+.page-footer {
+    background: #AE7C78;
+}
+
+.page-footer .navigation li a {
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
