@@ -10,50 +10,53 @@
 
 <body>
     <header class="page-header">
-        <a href="#" class="page-header__logo">
-            <img src="img\header-logo.svg" width="100" height="32" alt="На главную">
-        </a>
-        <nav class="main-menu">
-            <ul>
-                <li><a href="#">Каталог</a></li>
-                <li><a href="#">Доставка и оплата</a></li>
-                <li><a href="#">Отзывы</a></li>
-                <li><a href="#">Спецпредложения</a></li>
-                <li><a href="#">Контакты</a></li>
-                <li><a href="#">Корзина</a></li>
-            </ul>
-        </nav>
+        <div class="section-grid">
+            <nav class="main-menu begin">
+                <ul>
+                    <li><a href="#">Каталог</a></li>
+                    <li><a href="#">Доставка и оплата</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                </ul>
+            </nav>
+            <a href="/" class="page-header__logo">
+                <img src="img\header-logo.svg" width="100" height="32" alt="На главную">
+            </a>
+            <nav class="main-menu end">
+                <ul>
+                    <li><a href="#">Спецпредложения</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Корзина</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
-        <section class="primary">
-            <h1>Авторские букеты <i>в Петербурге</i></h1>
-            <h2>Оригинальные свежие букеты с доставкой по всему городу</h2>
-            <a href="#" class="link-button">Смотреть каталог</a>
-            <div>
-                <img src="files\primary__bouquet-tulips.jpg" width="386" height="404" alt="Букет тюльпанов">
-                <img src="files\primary__bouquet-roses.jpg" width="387" height="420" alt="Букет роз">
+        <section class="primary section-grid">
+            <div class="primary-tittle">
+                <h1>Авторские букеты <i>в Петербурге</i></h1>
+                <h2>Оригинальные свежие букеты с доставкой по всему городу</h2>
             </div>
+            <a href="#" class="link-button">Смотреть каталог</a>
+            <img src="files\primary__bouquet-tulips.jpg" width="386" height="404" alt="Букет тюльпанов">
+            <img src="files\primary__bouquet-roses.jpg" width="387" height="420" alt="Букет роз">
         </section>
         <section class="advantages">
-            <ul>
-                <li>
-                    <img src="img\fast-delivery.svg" width="82" height="52">
+            <ul class="advantages-list section-flex">
+                <li class="fast-delivery">
                     <h3>Быстрая доставка</h3>
                     <p>Можем собрать букет и передать его в доставку всего за час.</p>
                 </li>
-                <li>
-                    <img src="img\fresh-flowers.svg" width="52" height="52">
+                <li class="fresh-flowers">
                     <h3>Всегда свежие цветы</h3>
                     <p>Тщательно следим за состоянием цветов, а опытные флористы отбирают для букетов каждый цветок.</p>
                 </li>
-                <li>
-                    <img src="img\send-photo.svg" width="59" height="52">
+                <li class="send-photo">
                     <h3>Отправляем фото цветов</h3>
                     <p>Перед доставкой сделаем фотографию букета и отправим вам.</p>
                 </li>
             </ul>
         </section>
-        <section class="slider">
+        <section class="slider section-grid">
             <h2>Популярные букеты</h2>
             <div class="bouquet">
                 <div class="info">
@@ -63,126 +66,136 @@
                     </p>
                     <p class="size">30 × 40 см</p>
                     <p class="price">3600 руб.</p>
-                    <button class="action-button" type="button">
-                        Заказать
-                    </button>
                 </div>
+                <button class="action-button" type="button">
+                    Заказать
+                </button>
                 <img src="files\slider__boquet-white-roses.png" width="387" height="438" alt="Букет белых роз">
             </div>
             <div class="control-button">
-                <button type="button">
-                    <img src="img\arrow-left.svg" width="51" height="15" alt="Влево">
-                </button>
-                <button type="button">
-                    <img src="img\arrow-right.svg" width="51" height="15" alt="Вправо">
-                </button>
+                <button class="button-left"></button>
+                <button class="button-right"></button>
             </div>
         </section>
-        <section class="card-group">
-            <a class="card__go-to-chapter">
+        <section class="card-group section-flex">
+            <a class="card__go-to-chapter card__boquet-white-roses">
                 <p class="card-title">Свадебные букеты</p>
                 <p class="card-description">Букеты для невест</p>
-                <img src="files\card__boquet-white-roses.jpg" width="387" height="442" alt="Свадебный букет с розами">
+                <!--<img src="files\card__boquet-white-roses.jpg" width="387" height="442" alt="Свадебный букет с розами">-->
             </a>
             <a class="card__go-to-chapter">
                 <p class="card-title">Букеты с пионами</p>
                 <p class="card-description">Букеты с сезонными пионами</p>
-                <img src="files\card__boquet-peony.jpg" width="388" height="442" alt="Букет с пионами">
+                <!--<img src="files\card__boquet-peony.jpg" width="388" height="442" alt="Букет с пионами">-->
             </a>
             <a class="card__go-to-chapter">
                 <p class="card-title">Выбрать букет</p>
                 <p class="card-description">Букеты в ассортименте</p>
-                <img src="files\card__boquet-white-roses.jpg" width="388" height="442" alt="Букеты в руках">
+                <!--<img src="files\card__boquet-white-roses.jpg" width="388" height="442" alt="Букеты в руках">-->
             </a>
         </section>
         <section class="discount">
-            <h2>Скидка 10% на первый заказ</h2>
-            <h3>Если заказываете у нас букет впервые — при оформлении заказа введите промокод «Botanika2021» и получите
-                скидку 10%.</h3>
-            <img src="files\discount__boquet-on-table.jpg" width="590" height="391" alt="Яркий букет на столе">
+            <div class="section-grid">
+                <div class="description">
+                    <h2>Скидка 10% на первый заказ</h2>
+                    <h3>Если заказываете у нас букет впервые — при оформлении заказа введите промокод «Botanika2021» и
+                        получите
+                        скидку 10%.</h3>
+                </div>
+                <img src="files\discount__boquet-on-table.jpg" width="590" height="391" alt="Яркий букет на столе">
+            </div>
         </section>
-        <section class="steps-to-order">
+        <section class="steps-to-order section-flex">
             <h2>4 шага к идеальному букету</h2>
             <ol>
-                <li>
-                    <img src="img\make-order.svg" width="66" height="52">
+                <li class="make-order">
                     <h3>Заказ</h3>
                     <p>Выберите понравившийся букет из каталога и оформите заказ</p>
                 </li>
-                <li>
-                    <img src="img\manager-florist.svg" width="37" height="52">
+                <li class="manager-florist">
                     <h3>Уточнение деталей</h3>
                     <p>Наш флорист позвонит вам после оформления заказа, чтобы уточнить детали</p>
                 </li>
-                <li>
-                    <img src="img\payment-card.svg" width="67" height="52">
+                <li class="payment-card">
                     <h3>Оплата</h3>
                     <p>Оплатить заказ можно онлайн на сайте или при получении</p>
                 </li>
-                <li>
-                    <img src="img\fast-delivery.svg" width="82" height="52">
+                <li class="fast-delivery">
                     <h3>Доставка</h3>
                     <p>Курьер позвонит за час до прибытия и доставит заказ вовремя</p>
                 </li>
             </ol>
         </section>
-        <section class="news">
-            <h2>Следите за нашими новостями</h2>
-            <h3>Подписывайтесь на наши соцсети и узнавайте о новинках и акциях первым.</h3>
-            <div class="social-icon">
-                <a href="#"><img src="img\instagram_icon.svg" width="20" height="20" alt="Наш instagram"></a>
-                <a href="#"><img src="img\facebook_icon.svg" width="12" height="20" alt="Наш facebook"></a>
-                <a href="#"><img src="img\twitter_icon.svg" width="26" height="20" alt="Наш twitter"></a>
+        <section class="news section-grid">
+            <div class="news-description">
+                <h2>Следите за нашими новостями</h2>
+                <h3>Подписывайтесь на наши соцсети и узнавайте о новинках и акциях первым.</h3>
+                <!-- <div class="social-icon">
+                    <a href="#"><img src="img\instagram_icon.svg" width="20" height="20" alt="Наш instagram"></a>
+                    <a href="#"><img src="img\facebook_icon.svg" width="12" height="20" alt="Наш facebook"></a>
+                    <a href="#"><img src="img\twitter_icon.svg" width="26" height="20" alt="Наш twitter"></a>
+                </div> -->
             </div>
-            <img src="files\news__boquet-with-leaves.jpg" width="285" height="220" alt="Букет с литьями">
+            <img src="files\news__boquet-with-leaves.jpg" width="285" height="220" alt="Букет с лиcтьями">
             <img src="files\news__boquet-pink-roses.jpg" width="285" height="220" alt="Букет розовых роз">
             <img src="files\news__boquet-pink-carnation.jpg" width="387" height="460" alt="Букет розовых гвоздик">
         </section>
         <section class="reviews">
-            <h2>Отзывы</h2>
-            <blockquote>
-                <p>Всё очень понравилось! Быстрое оформление заказа, выбор удобного времени доставки. Всем большое
-                    спасибо!</p>
-                <cite>Марина</cite>
-            </blockquote>
-            <blockquote>
-                <p>Внимательные флористы, вежливые. Магазин находится прям рядом с метро. Букет очень понравился, буду
-                    ещё заказывать!</p>
-                <cite>Татьяна</cite>
-            </blockquote>
-            <blockquote>
-                <p>Выбор букетов на любой вкус и цену. Бывают хорошие скидки, а флористы всегда помогут и точно соберут
-                    красивый букет!</p>
-                <cite>Ольга</cite>
-            </blockquote>
+            <div class="reviews-list">
+                <h2>Отзывы</h2>
+                <div class="blockquote-list">
+                    <blockquote>
+                        <p>Всё очень понравилось! Быстрое оформление заказа, выбор удобного времени доставки. Всем
+                            большое
+                            спасибо!</p>
+                        <cite>Марина</cite>
+                    </blockquote>
+                    <blockquote>
+                        <p>Внимательные флористы, вежливые. Магазин находится прям рядом с метро. Букет очень
+                            понравился,
+                            буду
+                            ещё заказывать!</p>
+                        <cite>Татьяна</cite>
+                    </blockquote>
+                    <blockquote>
+                        <p>Выбор букетов на любой вкус и цену. Бывают хорошие скидки, а флористы всегда помогут и точно
+                            соберут
+                            красивый букет!</p>
+                        <cite>Ольга</cite>
+                    </blockquote>
+                </div>
+            </div>
         </section>
-        <section class="contact-address">
-            <h2>Мы ждем вас</h2>
-            <address>
-                <p>Приходите к нам:<span>Санкт-Петербург, ул. Большая Конюшенная, 19</span></p>
-                <p>Режим работы:<span>Пн-Вск, с 9-00 до 20-00</span></p>
-                <p>Позвоните нам:<span><a href="tel:+78129834719">+ 7 (812) 983-47-19</a></span></p>
-                <p>Напишите нам:<span><a href="mailto:info@botanika.ru">info@botanika.ru</a></span></p>
-            </address>
-            <img src="files\contact-adress__map.jpg" width="1440" height="644">
+        <section class="contact-address section-grid">
+            <div class="address-description">
+                <h2>Мы ждем вас</h2>
+                <address>
+                    <p>Приходите к нам:<span>Санкт-Петербург, ул. Большая Конюшенная, 19</span></p>
+                    <p>Режим работы:<span>Пн-Вск, с 9-00 до 20-00</span></p>
+                    <p>Позвоните нам:<span><a href="tel:+78129834719">+ 7 (812) 983-47-19</a></span></p>
+                    <p>Напишите нам:<span><a href="mailto:info@botanika.ru">info@botanika.ru</a></span></p>
+                </address>
+            </div>
+            <!-- <img src="files\contact-adress__map.jpg" width="1440" height="644"> -->
         </section>
     </main>
     <footer class="page-footer">
-        <a href="#" class="page-footer__logo">
-            <img src="img\footer-logo.svg" width="100" height="32" alt="На главную">
-        </a>
-        <ul class="navigation"> 
-            <li><a href="#">Каталог</a></li>
-            <li><a href="#">Доставка и оплата</a></li>
-            <li><a href="#">Отзывы</a></li>
-            <li><a href="#">Спецпредложения</a></li>
-            <li><a href="#">Контакты</a></li>
-            <li><a href="#">Корзина</a></li>
-        </ul>
-        <div class="social-icon">
-            <a href="#"><img src="img\instagram_icon.svg" width="20" height="20" alt="Наш instagram"></a>
-            <a href="#"><img src="img\facebook_icon.svg" width="12" height="20" alt="Наш facebook"></a>
-            <a href="#"><img src="img\twitter_icon.svg" width="26" height="20" alt="Наш twitter"></a>
+        <div class="section-flex">
+            <a href="/" class="page-footer__logo">
+                <img src="img\footer-logo.svg" width="100" height="32" alt="На главную">
+            </a>
+            <ul class="page-footer__navigation">
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#">Доставка и оплата</a></li>
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="#">Спецпредложения</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+            <div class="page-footer__social-icon">
+                <a href="#"><img src="img\instagram_icon.svg" width="20" height="20" alt="Наш instagram"></a>
+                <a href="#"><img src="img\facebook_icon.svg" width="12" height="20" alt="Наш facebook"></a>
+                <a href="#"><img src="img\twitter_icon.svg" width="26" height="20" alt="Наш twitter"></a>
+            </div>
         </div>
     </footer>
 </body>
